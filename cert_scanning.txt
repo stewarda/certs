@@ -1,0 +1,9 @@
+1 - NMAP Scan paramaters
+
+nmap -iL <.txt input list IP's or hostname> -sV -p 443,8443 -oX <.xml output>  --script=ssl-cert
+
+2 - Parse output with Python Script
+
+http://hackertarget.com/parse-nmap-xml-ssl-certificate/
+
+3 - Cleanup in Excel
