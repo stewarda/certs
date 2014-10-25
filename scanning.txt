@@ -1,3 +1,5 @@
+## Cert Info
+
 1 - NMAP Scan paramaters, input list should include all ELB's, Instances, Domains and External IPs
 
 nmap -iL <.txt input list IP's or hostname> -sV -T4 -p 443,8443 -oX <.xml output>  --script=ssl-cert
@@ -7,3 +9,8 @@ nmap -iL <.txt input list IP's or hostname> -sV -T4 -p 443,8443 -oX <.xml output
 http://hackertarget.com/parse-nmap-xml-ssl-certificate/
 
 3 - Cleanup in Excel
+
+
+## High Risk Ports
+
+nmap -iL awsinstances.txt -sV -pN -p U:53,137,161,162,T:22,53,137,139,445,1433,3306,3389,5432,5433,7000,7001,7199,9042,9160,27017,27018,27019,28017
