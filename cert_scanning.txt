@@ -1,6 +1,6 @@
 1 - NMAP Scan paramaters, input list should include all ELB's, Instances, Domains and External IPs
 
-nmap -iL <.txt input list IP's or hostname> -sV -p 443,8443 -oX <.xml output>  --script=ssl-cert
+nmap -iL <.txt input list IP's or hostname> -sV -T4 -p 443,8443 -oX <.xml output>  --script=ssl-cert
 
 2 - Parse output with Python Script
 
